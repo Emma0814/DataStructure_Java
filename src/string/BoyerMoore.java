@@ -17,8 +17,7 @@ public class BoyerMoore {
      * @return
      */
 	public int badCharacterMove(int j, String pattern, char c) {
-		int i = j - pattern.substring(0, j).lastIndexOf(c);
-		return i;
+		return j - pattern.substring(0, j).lastIndexOf(c);
 	}
 	
 	/**
