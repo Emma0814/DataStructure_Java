@@ -23,5 +23,8 @@ public class Sort {
 		MergeSort merge = new MergeSort();
 		merge.sort1(arr.clone());
 		merge.sort2(arr.clone());
+		System.out.println("******** Quick Sort ********");
+		QuickSort quick = new QuickSort();
+		quick.sort1(arr);
 	}
 }

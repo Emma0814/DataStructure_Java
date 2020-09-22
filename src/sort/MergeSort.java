@@ -56,13 +56,13 @@ public class MergeSort {
 	 */
 	private void mergePass(int[] arr, int width) {
 		int left = 0;
-		while (left + 2 * width - 1 < arr.length) {
+		while (left + 2 * width - 1 < arr.length) {  // right < len
 			int mid = left + width - 1;
 			int right = left + 2 * width - 1;
 			merge(arr, left, mid, right);
 			left += 2 * width;
 		}
-		if(left + width - 1 < arr.length)
+		if(left + width - 1 < arr.length)  // mid < len
             merge(arr, left, left + width - 1, arr.length - 1);
 	}
 	
