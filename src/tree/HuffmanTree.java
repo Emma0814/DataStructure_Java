@@ -31,14 +31,9 @@ public class HuffmanTree {
 	 */
 	public HashMap<Character, Integer> countFrequency(String str) {
 		HashMap<Character, Integer> charMap = new HashMap<>();
-		if (str.length() != 0) {
-			for (int i = 0; i < str.length(); i++) {
-				if (charMap.containsKey(str.charAt(i)))
-					charMap.put(str.charAt(i), charMap.get(str.charAt(i)) + 1);
-				else 
-					charMap.put(str.charAt(i), 1);
-			}
-		}
+		if (str.length() != 0)
+			for (int i = 0; i < str.length(); i++)
+				charMap.put(str.charAt(i), charMap.getOrDefault(str.charAt(i), 1) + 1);
 		return charMap;
 	}
 	
