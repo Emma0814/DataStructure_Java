@@ -25,6 +25,12 @@ public class Sort {
 		merge.sort2(arr.clone());
 		System.out.println("******** Quick Sort ********");
 		QuickSort quick = new QuickSort();
-		quick.sort1(arr);
+		quick.sort1(arr.clone());
+		quick.sort2(arr.clone());
+		quick.sort3(arr.clone());
+		quick.sort4(arr.clone());
+		System.out.println("******** Heap Sort ********");
+		HeapSort heap = new HeapSort();
+		heap.sort(arr.clone());
 	}
 }
