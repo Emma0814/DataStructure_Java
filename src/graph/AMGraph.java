@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 /**
- * 
+ * 邻接矩阵 - Adjacency Matrix
  * @author emmajing
  */
-public class MGraph {
+public class AMGraph {
 
 	public final static int INFINITY = Integer.MAX_VALUE;
 	private GraphKind kind;
@@ -15,14 +15,14 @@ public class MGraph {
 	private int numEdges;
 	private double[][] arcs;
 	
-	public MGraph(GraphKind kind, int numNodes, int numEdges, double[][] arcs){
+	public AMGraph(GraphKind kind, int numNodes, int numEdges, double[][] arcs){
 		this.kind = kind;
 	    this.numNodes = numNodes;
 	    this.numEdges = numEdges;
 	    this.arcs = arcs;
 	}
 
-	public MGraph(String kind){
+	public AMGraph(String kind){
 		this(GraphKind.valueOf(kind), 0, 0, null);
 	}
 	

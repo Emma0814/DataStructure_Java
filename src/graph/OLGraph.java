@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 /**
- * 十字链表
+ * 十字链表 Orthogonal List
  * @author emmajing
  *
  */

@@ -3,6 +3,11 @@ package graph;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+/**
+ * 邻接表 - Adjacency List
+ * @author emmajing
+ *
+ */
 public class ALGraph {
 	
 	private GraphKind kind;
