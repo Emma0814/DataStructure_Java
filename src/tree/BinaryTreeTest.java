@@ -9,7 +9,7 @@ public class BinaryTreeTest {
 
 	public static void main(String[] args) {
 
-		BinaryTree bt = new BinaryTree("ABDH#K###E##CFI###G#J###");
+		BinaryTree bt = new BinaryTree("ABDH#K###E##CFI###G#J##");
 		Node root = bt.getRoot();
 		System.out.println("----------递归前序遍历----------");
         bt.preOrderTraverse(root);

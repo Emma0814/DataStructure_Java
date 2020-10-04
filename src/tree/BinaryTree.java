@@ -24,7 +24,7 @@ public class BinaryTree {
 
 	/**
 	 * Create a binary tree under a string of preOrderTraverse including empty subtrees
-	 * e.g.: "ABDH#K###E##CFI###G#J###""
+	 * e.g.: "ABDH#K###E##CFI###G#J##"
 	 * @param preStr - preOrderTraverse with '#'
 	 */
 	public BinaryTree(String preStr) {
