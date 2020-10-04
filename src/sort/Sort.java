@@ -38,5 +38,8 @@ public class Sort {
 		System.out.println("******** Bucket Sort ********");
 		BucketSort bucket = new BucketSort();
 		bucket.sort(arr.clone());
+		System.out.println("******** Radix Sort ********");
+		RadixSort radix = new RadixSort();
+		radix.sort(arr.clone(), 2);
 	}
 }
